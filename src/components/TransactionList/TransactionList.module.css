@@ -1,0 +1,177 @@
+.transactionList {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 0;
+  padding: 24px 16px;
+  overflow: hidden;
+}
+
+.transactionListTitle {
+  flex-shrink: 0;
+  margin: 0 0 16px;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.transactions {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 0;
+  overflow: hidden auto;
+}
+
+.transactionItem {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  padding: 14px;
+  border-bottom: 1px solid var(--color-border);
+  transition: background-color 0.15s ease;
+  cursor: pointer;
+}
+
+.transactionItem:hover {
+  background-color: var(--color-bg-hover);
+}
+
+.transactionItem:last-child {
+  border-bottom: none;
+}
+
+.transactionLogo {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  margin-right: 12px;
+}
+
+.transactionInfo {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 1px;
+  min-width: 0;
+}
+
+.transactionMerchant {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.transactionDescription {
+  overflow: hidden;
+  font-size: 15px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--color-text-secondary);
+}
+
+.transactionDate {
+  font-size: 15px;
+  color: var(--color-text-secondary);
+}
+
+.transactionAmountSection {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  align-items: flex-end;
+  margin-left: 8px;
+}
+
+.transactionAmount {
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--color-text-primary);
+}
+
+.credit {
+  color: var(--color-text-primary);
+}
+
+.transactionCashback {
+  margin-top: 2px;
+  font-size: 15px;
+  color: var(--color-text-secondary);
+}
+
+.transactionChevron {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  margin-left: 12px;
+  color: var(--color-chevron);
+}
+
+/* Skeleton styles */
+.skeletonItem {
+  display: flex;
+  align-items: center;
+  padding: 14px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.skeletonItem:last-child {
+  border-bottom: none;
+}
+
+.skeletonLogo {
+  width: 44px;
+  height: 44px;
+  margin-right: 12px;
+  background: var(--color-bg-card);
+  border-radius: 10px;
+  animation: shimmer 1.5s infinite;
+}
+
+.skeletonInfo {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.skeletonLine {
+  width: 120px;
+  height: 16px;
+  background: var(--color-bg-card);
+  border-radius: 4px;
+  animation: shimmer 1.5s infinite;
+}
+
+.skeletonLineShort {
+  width: 80px;
+  height: 14px;
+  background: var(--color-bg-card);
+  border-radius: 4px;
+  animation: shimmer 1.5s infinite;
+  animation-delay: 0.2s;
+}
+
+.skeletonAmount {
+  width: 60px;
+  height: 16px;
+  margin-left: 8px;
+  background: var(--color-bg-card);
+  border-radius: 4px;
+  animation: shimmer 1.5s infinite;
+  animation-delay: 0.4s;
+}
+
+@keyframes shimmer {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,179 @@
+.transactionDetail {
+  min-height: 100vh;
+  background: var(--color-bg-white);
+}
+
+.detailHeader {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+}
+
+.backButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -8px;
+  padding: 8px;
+  color: var(--color-primary);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.detailContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 16px;
+}
+
+.detailAmount {
+  font-size: 56px;
+  font-weight: 700;
+  letter-spacing: -2px;
+  color: var(--color-text-primary);
+}
+
+.detailMerchant {
+  margin-top: 8px;
+  font-size: 17px;
+  color: var(--color-text-secondary);
+}
+
+.detailDate {
+  margin-top: 4px;
+  font-size: 15px;
+  color: var(--color-text-secondary);
+}
+
+.detailCard {
+  width: 100%;
+  margin-top: 32px;
+  padding: 16px;
+  background: var(--color-bg-card);
+  border-radius: 12px;
+}
+
+.detailRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 0;
+}
+
+.secondary {
+  margin-top: 2px;
+}
+
+.detailLabel {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.detailCardName {
+  font-size: 15px;
+  color: var(--color-text-secondary);
+}
+
+.detailDivider {
+  height: 1px;
+  margin: 12px 0;
+  background: var(--color-border);
+}
+
+.totalRow {
+  padding: 4px 0;
+}
+
+.detailTotalLabel {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+}
+
+.detailTotalAmount {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+}
+
+/* Skeleton styles */
+.skeletonAmount {
+  width: 180px;
+  height: 56px;
+  background: var(--color-bg-card);
+  border-radius: 8px;
+  animation: shimmer 1.5s infinite;
+}
+
+.skeletonMerchant {
+  width: 80px;
+  height: 17px;
+  margin-top: 8px;
+  background: var(--color-bg-card);
+  border-radius: 4px;
+  animation: shimmer 1.5s infinite;
+  animation-delay: 0.1s;
+}
+
+.skeletonDate {
+  width: 120px;
+  height: 15px;
+  margin-top: 4px;
+  background: var(--color-bg-card);
+  border-radius: 4px;
+  animation: shimmer 1.5s infinite;
+  animation-delay: 0.2s;
+}
+
+.skeletonLabel {
+  width: 120px;
+  height: 15px;
+  background: var(--color-border);
+  border-radius: 4px;
+  animation: shimmer 1.5s infinite;
+  animation-delay: 0.3s;
+}
+
+.skeletonCardName {
+  width: 140px;
+  height: 15px;
+  background: var(--color-border);
+  border-radius: 4px;
+  animation: shimmer 1.5s infinite;
+  animation-delay: 0.4s;
+}
+
+.skeletonTotal {
+  width: 40px;
+  height: 15px;
+  background: var(--color-border);
+  border-radius: 4px;
+  animation: shimmer 1.5s infinite;
+  animation-delay: 0.5s;
+}
+
+.skeletonTotalAmount {
+  width: 60px;
+  height: 15px;
+  background: var(--color-border);
+  border-radius: 4px;
+  animation: shimmer 1.5s infinite;
+  animation-delay: 0.6s;
+}
+
+@keyframes shimmer {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

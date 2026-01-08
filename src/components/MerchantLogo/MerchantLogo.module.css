@@ -1,0 +1,94 @@
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.small {
+  width: 32px;
+  height: 32px;
+}
+
+.medium {
+  width: 44px;
+  height: 44px;
+}
+
+.large {
+  width: 64px;
+  height: 64px;
+}
+
+.apple {
+  color: var(--color-bg-white);
+  background: var(--color-apple-bg);
+}
+
+.apple svg {
+  width: 60%;
+  height: 60%;
+  fill: currentcolor;
+}
+
+.ikea {
+  background: var(--color-ikea-bg);
+}
+
+.ikeaText {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: var(--color-ikea-text);
+}
+
+.large .ikeaText {
+  font-size: 14px;
+}
+
+.target {
+  background: var(--color-bg-white);
+  border: 1px solid var(--color-border);
+}
+
+.target svg {
+  width: 85%;
+  height: 85%;
+}
+
+.targetRed {
+  fill: var(--color-target-red);
+}
+
+.targetWhite {
+  fill: var(--color-bg-white);
+}
+
+.airalo {
+  background: var(--color-airalo-bg);
+}
+
+.airaloText {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-bg-white);
+}
+
+.large .airaloText {
+  font-size: 28px;
+}
+
+.default {
+  background: var(--color-text-secondary);
+}
+
+.defaultText {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-bg-white);
+}
+
+.large .defaultText {
+  font-size: 26px;
+}
