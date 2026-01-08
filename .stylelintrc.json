@@ -154,6 +154,7 @@
         "ignoreProperties": ["composes"]
       }
     ],
-    "no-descending-specificity": null
+    "no-descending-specificity": null,
+    "value-keyword-case": null
   }
 }

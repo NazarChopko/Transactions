@@ -38,7 +38,7 @@
 }
 
 .balanceBox {
-  composes: cardbox;
+  composes: cardBox;
 }
 
 .balanceBox .cardValue {
@@ -47,7 +47,7 @@
 }
 
 .paymentBox {
-  composes: cardbox;
+  composes: cardBox;
   justify-content: flex-start;
 }
 
@@ -57,7 +57,7 @@
 }
 
 .pointsBox {
-  composes: cardbox;
+  composes: cardBox;
   justify-content: space-between;
 }
 
@@ -67,7 +67,7 @@
 }
 
 .checkBox {
-  composes: cardbox;
+  composes: cardBox;
   justify-content: center;
   align-items: center;
 }
